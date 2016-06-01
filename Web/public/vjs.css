@@ -1,0 +1,166 @@
+/* This CSS file is modified from Gladly.CSS, a previous project. Some classes/ids may not be used.*/
+
+body {
+    background: linear-gradient(135deg, #4090b0 0%,  #9cdbca 100%);
+    cursor: default;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+    font-family: 'Fredoka One', 'Verdana', sans-serif;
+    color: white;
+    font-size: 13vw;
+    line-height: 4vw;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Segoe UI Light', 'Segoe UI', 'Verdana', sans-serif;
+    font-size: 2.5vw;
+    line-height: 2vw;
+    color: white;    
+    font-weight: normal;
+    padding-bottom: 3vw;
+}
+
+ol {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+li { 
+    margin: .5vw;
+    padding: 2vw;
+    text-align: center; 
+    border: .25vw solid rgba(255,255,255,0);
+    border-radius: .5rem;   
+    cursor: default; 
+    align-items: stretch;
+    justify-content: space-around;
+    width: 4.5rem;
+    flex-grow: 3;
+}
+
+li.crayon {
+    height: 4.5rem;
+}
+
+li.animate {
+    transform: rotateX(-189deg);
+    transition: .4s ease-in-out;
+}
+
+li.animate2 {
+    transform: rotateX(0deg);
+    transition: .4s ease-in-out;
+}
+
+li.copy {
+   border: .25vw solid rgba(225,225,225,1);
+}
+
+li:hover {
+    border: .25vw solid rgba(245,245,245,1);
+}
+
+span.button {
+    font-family: 'Segoe UI Light', 'Segoe UI', 'Verdana', sans-serif;
+    font-size: 1.75vw;
+    color: black;    
+    font-weight: normal;
+    line-height: 2.5vw;
+}
+
+div#textholder {
+    padding-left: 3vw;
+    margin: 3vw;
+    border-left: 1px solid lightgray;
+}
+
+textarea {
+    font-size: 1.75vw;
+    box-sizing: content-box;
+    width:80%; 
+    border: 0;
+    padding-left: 2vw;
+    font-family: monospace;
+    overflow-y: visible;
+}
+
+textarea::selection {
+    display: hidden;
+}
+
+div#main {
+  text-align: center;
+  opacity: 0;
+}
+
+div#main.fadingin1sec {
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+div.rainbow {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.9));
+    z-index: 10;
+    position: relative;
+    top: 0px;
+}
+
+div.rainbow2 {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: -200px;
+}
+
+div#slider {
+    height: 300px;
+    width: 24px;
+    position: relative;
+    top: -450px;
+    z-index: 20;
+    background-color:gray;
+}
+
+div#crayonbox {
+    background-color:white;
+    padding: 1vw;
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 12%;
+    border: .25vw solid rgba(255,255,255,0);
+    border-radius: .5rem; 
+}
+
+div#crayoninner {
+    margin-right: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    h2 {font-size: 4.5vw; line-height: 4.5vw; padding-left: 20%; padding-right: 20%;}
+    span.button {font-size: 3vw;}
+    li.copy {padding: 1vw;}
+}
+
